@@ -11,5 +11,9 @@ target 'Movies' do
   pod 'Alamofire'
   pod 'SnapKit'
   pod 'SDWebImage'
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'RxRealm' 
+  pod 'RealmSwift'
 
 end
