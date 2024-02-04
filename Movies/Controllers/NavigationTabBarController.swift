@@ -23,7 +23,7 @@ private extension NavigationTabBarController {
     func setupViews() {
         
         tabBar.tintColor = D.Colors.standartTextColor
-        tabBar.barTintColor = D.Colors.tabBarUnselectTabColor
+        tabBar.unselectedItemTintColor = D.Colors.tabBarUnselectTabColor
         tabBar.backgroundImage = UIImage()
         tabBar.shadowImage = UIImage()
         
@@ -43,7 +43,7 @@ private extension NavigationTabBarController {
         let height = tabBar.bounds.height + positionY * 2
         
         let round = CAShapeLayer()
-        let bezierPath = UIBezierPath(roundedRect: CGRect(x: positionX, y: tabBar.bounds.minY - positionY, width: width, height: height), cornerRadius: height / 2)
+        let bezierPath = UIBezierPath(roundedRect: CGRect(x: positionX, y: tabBar.bounds.minY - positionY, width: width, height: height), cornerRadius: height / 3)
         
         round.path = bezierPath.cgPath
         tabBar.layer.insertSublayer(round, at: 0)
@@ -56,7 +56,6 @@ private extension NavigationTabBarController {
 extension NavigationTabBarController: UITabBarControllerDelegate {
     
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
-        let haptic = UIImpactFeedbackGenerator(style: .medium)
-        haptic.impactOccurred()
+        Haptic.getHaptic()
     }
 }

@@ -12,7 +12,6 @@ class NavigationBarController: UINavigationController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setupView()
     }
 }

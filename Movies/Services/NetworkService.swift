@@ -20,32 +20,4 @@ class NetworkService {
             }
         }
     }
-    
-//    func fetchMoviesList(completion: @escaping (Result<MoviesList, Error>) -> Void) {
-//        let url = NetList.Urls.baseUrl + NetList.Points.popularMovies
-//        let parameters: [String: Any] = ["api_key": NetList.Keys.apiKey]
-//        
-//        AF.request(url, parameters: parameters).responseDecodable(of: MoviesList.self) { response in
-//            switch response.result {
-//            case .success(let movieListResponse):
-//                completion(.success(movieListResponse))
-//            case .failure(let error):
-//                completion(.failure(error))
-//            }
-//        }
-//    }
-//    
-//    func fetchGenreList(completion: @escaping (Result<GenreList, Error>) -> Void) {
-//        let url = NetList.Urls.baseUrl + NetList.Points.genres
-//        let parameters: [String: Any] = ["api_key": NetList.Keys.apiKey]
-//        
-//        AF.request(url, parameters: parameters).responseDecodable(of: GenreList.self) { response in
-//            switch response.result {
-//            case .success(let genreListResponse):
-//                completion(.success(genreListResponse))
-//            case .failure(let error):
-//                completion(.failure(error))
-//            }
-//        }
-//    }
 }

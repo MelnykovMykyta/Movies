@@ -13,7 +13,7 @@ import Lottie
 class AnimationVC: UIViewController {
     
     private var animatedView: LottieAnimationView!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
