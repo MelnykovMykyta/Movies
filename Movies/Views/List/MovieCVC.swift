@@ -50,6 +50,8 @@ extension MovieCVC {
         }
         
         image.snp.makeConstraints {
+            $0.width.equalTo(view.snp.width)
+            $0.height.equalTo(image.snp.width).multipliedBy(1.5)
             $0.edges.equalToSuperview()
         }
         

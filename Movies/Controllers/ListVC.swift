@@ -34,11 +34,11 @@ class ListVC: UIViewController {
         setupCollectionView()
         viewModel.fetchData()
         
-        viewModel.moviesListObservable
+        viewModel.moviesObservable
             .subscribe(onNext: { [weak self] moviesList in
-                guard let self = self, let moviesList = moviesList else { return }
-                list = moviesList.results
-                collectionView.reloadData()
+                guard let self = self else { return }
+                self.list = moviesList
+                self.collectionView.reloadData()
             }).disposed(by: disposeBag)
     }
 }
@@ -55,17 +55,6 @@ extension ListVC: UICollectionViewDelegate, UICollectionViewDataSource {
         collectionView.collectionViewLayout = UICollectionViewFlowLayout()
         collectionView.backgroundColor = .clear
         collectionView.addGestureRecognizer(longPressGesture)
-    }
-    
-    @objc private func longPress(_ gestureRecognizer: UILongPressGestureRecognizer) {
-        if gestureRecognizer.state == .began {
-            let touchPoint = gestureRecognizer.location(in: collectionView)
-            if let indexPath = collectionView.indexPathForItem(at: touchPoint) {
-                Haptic.getHaptic()
-                let movie = list[indexPath.item]
-                viewModel.checkMovie(movie)
-            }
-        }
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -105,5 +94,25 @@ extension ListVC: UICollectionViewDelegateFlowLayout {
         let cellWidth = (collectionViewWidth - 3 * spacing) / 2.0
         
         return CGSize(width: cellWidth, height: cellWidth * 1.7)
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let offsetY = scrollView.contentOffset.y
+        let contentHeight = scrollView.contentSize.height - scrollView.frame.height
+        
+        if offsetY > contentHeight {
+            viewModel.fetchNextPage()
+        }
+    }
+    
+    @objc private func longPress(_ gestureRecognizer: UILongPressGestureRecognizer) {
+        guard gestureRecognizer.state == .began else { return }
+        
+        let touchPoint = gestureRecognizer.location(in: collectionView)
+        guard let indexPath = collectionView.indexPathForItem(at: touchPoint) else { return }
+        
+        Haptic.getHaptic()
+        let movie = list[indexPath.item]
+        viewModel.checkMovie(movie)
     }
 }

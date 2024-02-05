@@ -12,9 +12,12 @@ import SDWebImage
 
 class MoviesListViewModel {
     
-    private let moviesListSubject = BehaviorSubject<MoviesList?>(value: nil)
-    var moviesListObservable: Observable<MoviesList?> {
-        return moviesListSubject.asObservable()
+    private var currentPage = 0
+    private var totalPages = 0
+    
+    private var moviesRelay = BehaviorRelay<[Movie]>(value: [])
+    var moviesObservable: Observable<[Movie]> {
+        return moviesRelay.asObservable()
     }
     
     private var genres: [Genre] = []
@@ -33,11 +36,41 @@ class MoviesListViewModel {
         NetworkService.fetchData(url: url, parameters: NetList.Keys.parameters, completion: completion)
     }
     
+    private func appendMovies(_ newMovies: [Movie]) {
+        var currentMovies = moviesRelay.value
+        currentMovies.append(contentsOf: newMovies)
+        moviesRelay.accept(currentMovies)
+    }
+    
+    func fetchNextPage() {
+        guard currentPage < totalPages else { return }
+        
+        currentPage += 1
+        getMoviesList(page: currentPage) { [weak self] result in
+            switch result {
+            case .success(let movieListResponse):
+                self?.appendMovies(movieListResponse.results)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
+    private func getMoviesList(page: Int, completion: @escaping (Result<MoviesList, Error>) -> Void) {
+        var parameters = NetList.Keys.parameters
+        parameters["page"] = page
+        
+        let url = NetList.Urls.baseUrl + NetList.Points.popularMovies
+        NetworkService.fetchData(url: url, parameters: parameters, completion: completion)
+    }
+    
     func fetchData() {
         getMoviesList { [weak self] result in
             switch result {
             case .success(let movieListResponse):
-                self?.moviesListSubject.onNext(movieListResponse)
+                self?.appendMovies(movieListResponse.results)
+                self?.totalPages = movieListResponse.totalPages
+                self?.currentPage = movieListResponse.page
             case .failure(let error):
                 print(error.localizedDescription)
             }

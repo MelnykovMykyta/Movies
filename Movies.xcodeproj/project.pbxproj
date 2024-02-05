@@ -12,6 +12,8 @@
 		770DEDD42B7004C700935E90 /* RealmDBService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770DEDD32B7004C700935E90 /* RealmDBService.swift */; };
 		770DEDD62B70051B00935E90 /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770DEDD52B70051B00935E90 /* FavoriteViewModel.swift */; };
 		770DEDD82B700E1C00935E90 /* Haptic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770DEDD72B700E1C00935E90 /* Haptic.swift */; };
+		7711FC592B710CF300C70E8A /* FavoriteMovieDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7711FC582B710CF300C70E8A /* FavoriteMovieDetailsVC.swift */; };
+		7711FC5C2B710F9800C70E8A /* FavoriteDetailsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7711FC5B2B710F9800C70E8A /* FavoriteDetailsTVC.swift */; };
 		7722B75D2B6D9803006F4CB0 /* NavigationTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7722B75C2B6D9803006F4CB0 /* NavigationTabBarController.swift */; };
 		7722B75F2B6D989A006F4CB0 /* Tabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7722B75E2B6D989A006F4CB0 /* Tabs.swift */; };
 		773549372B6E75BE00EBA1C2 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773549362B6E75BE00EBA1C2 /* MovieModel.swift */; };
@@ -35,16 +37,23 @@
 		77DF48112B6E4FA5003B93F8 /* MovieCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DF48102B6E4FA5003B93F8 /* MovieCVC.swift */; };
 		77DF48182B6E5864003B93F8 /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DF48162B6E5864003B93F8 /* ListVC.swift */; };
 		77DF48192B6E5864003B93F8 /* ListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77DF48172B6E5864003B93F8 /* ListVC.xib */; };
-		9A3145BF00E545558415D555 /* Pods_Movies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C53541F989645AC5857A9F35 /* Pods_Movies.framework */; };
+		77FE2AAC2B715D62000ECA43 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 77FE2AAB2B715D62000ECA43 /* SnapKit */; };
+		77FE2AAE2B715D62000ECA43 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 77FE2AAD2B715D62000ECA43 /* SnapKit-Dynamic */; };
+		77FE2AB12B715E4E000ECA43 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 77FE2AB02B715E4E000ECA43 /* Alamofire */; };
+		77FE2AB42B715F64000ECA43 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 77FE2AB32B715F64000ECA43 /* Realm */; };
+		77FE2AB62B715F64000ECA43 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 77FE2AB52B715F64000ECA43 /* RealmSwift */; };
+		77FE2AB92B715FA7000ECA43 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 77FE2AB82B715FA7000ECA43 /* SDWebImage */; };
+		77FE2ABB2B715FA7000ECA43 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 77FE2ABA2B715FA7000ECA43 /* SDWebImageMapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5FD8CF4712AB13BDA4F55540 /* Pods-Movies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movies.release.xcconfig"; path = "Target Support Files/Pods-Movies/Pods-Movies.release.xcconfig"; sourceTree = "<group>"; };
 		770DEDCF2B6FE3EE00935E90 /* String + DateExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + DateExt.swift"; sourceTree = "<group>"; };
 		770DEDD12B6FF0BA00935E90 /* FavoriteMovieTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteMovieTVC.swift; sourceTree = "<group>"; };
 		770DEDD32B7004C700935E90 /* RealmDBService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDBService.swift; sourceTree = "<group>"; };
 		770DEDD52B70051B00935E90 /* FavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
 		770DEDD72B700E1C00935E90 /* Haptic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptic.swift; sourceTree = "<group>"; };
+		7711FC582B710CF300C70E8A /* FavoriteMovieDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteMovieDetailsVC.swift; sourceTree = "<group>"; };
+		7711FC5B2B710F9800C70E8A /* FavoriteDetailsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDetailsTVC.swift; sourceTree = "<group>"; };
 		7722B75C2B6D9803006F4CB0 /* NavigationTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTabBarController.swift; sourceTree = "<group>"; };
 		7722B75E2B6D989A006F4CB0 /* Tabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabs.swift; sourceTree = "<group>"; };
 		773549362B6E75BE00EBA1C2 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
@@ -70,8 +79,6 @@
 		77DF48102B6E4FA5003B93F8 /* MovieCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCVC.swift; sourceTree = "<group>"; };
 		77DF48162B6E5864003B93F8 /* ListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVC.swift; sourceTree = "<group>"; };
 		77DF48172B6E5864003B93F8 /* ListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListVC.xib; sourceTree = "<group>"; };
-		C53541F989645AC5857A9F35 /* Pods_Movies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Movies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5AC6BE31380FDED2A2FC99B /* Pods-Movies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movies.debug.xcconfig"; path = "Target Support Files/Pods-Movies/Pods-Movies.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,28 +86,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A3145BF00E545558415D555 /* Pods_Movies.framework in Frameworks */,
+				77FE2AB92B715FA7000ECA43 /* SDWebImage in Frameworks */,
+				77FE2AB12B715E4E000ECA43 /* Alamofire in Frameworks */,
+				77FE2AAC2B715D62000ECA43 /* SnapKit in Frameworks */,
+				77FE2AB42B715F64000ECA43 /* Realm in Frameworks */,
+				77FE2AB62B715F64000ECA43 /* RealmSwift in Frameworks */,
+				77FE2ABB2B715FA7000ECA43 /* SDWebImageMapKit in Frameworks */,
+				77FE2AAE2B715D62000ECA43 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		58B42A9EE7CA65048F04DCE6 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D5AC6BE31380FDED2A2FC99B /* Pods-Movies.debug.xcconfig */,
-				5FD8CF4712AB13BDA4F55540 /* Pods-Movies.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		770DEDCE2B6FE38A00935E90 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				770DEDCF2B6FE3EE00935E90 /* String + DateExt.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7711FC5A2B710F7C00C70E8A /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				770DEDD12B6FF0BA00935E90 /* FavoriteMovieTVC.swift */,
+				7711FC5B2B710F9800C70E8A /* FavoriteDetailsTVC.swift */,
+			);
+			path = Favorite;
 			sourceTree = "<group>";
 		};
 		773549352B6E75AA00EBA1C2 /* Models */ = {
@@ -126,8 +139,6 @@
 			children = (
 				776AE54E2B6D852200D7FCF1 /* Movies */,
 				776AE54D2B6D852200D7FCF1 /* Products */,
-				58B42A9EE7CA65048F04DCE6 /* Pods */,
-				FCE5708257850643F3DA62DF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -184,6 +195,7 @@
 				77515D132B6DC1F000447E3C /* NavigationBarController.swift */,
 				77DF48162B6E5864003B93F8 /* ListVC.swift */,
 				7735493F2B6EC13700EBA1C2 /* MovieDetailsVC.swift */,
+				7711FC582B710CF300C70E8A /* FavoriteMovieDetailsVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -221,9 +233,9 @@
 		77DF480D2B6E4F32003B93F8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7711FC5A2B710F7C00C70E8A /* Favorite */,
 				77DCA8AF2B6FCB44004E3C50 /* Details */,
 				77DF480F2B6E4F55003B93F8 /* List */,
-				770DEDD12B6FF0BA00935E90 /* FavoriteMovieTVC.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -237,14 +249,6 @@
 			path = List;
 			sourceTree = "<group>";
 		};
-		FCE5708257850643F3DA62DF /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C53541F989645AC5857A9F35 /* Pods_Movies.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -252,17 +256,24 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 776AE5602B6D852600D7FCF1 /* Build configuration list for PBXNativeTarget "Movies" */;
 			buildPhases = (
-				8D5E52BC6A86442D27647961 /* [CP] Check Pods Manifest.lock */,
 				776AE5482B6D852200D7FCF1 /* Sources */,
 				776AE5492B6D852200D7FCF1 /* Frameworks */,
 				776AE54A2B6D852200D7FCF1 /* Resources */,
-				9279AC4EBC6A60C7225C4579 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Movies;
+			packageProductDependencies = (
+				77FE2AAB2B715D62000ECA43 /* SnapKit */,
+				77FE2AAD2B715D62000ECA43 /* SnapKit-Dynamic */,
+				77FE2AB02B715E4E000ECA43 /* Alamofire */,
+				77FE2AB32B715F64000ECA43 /* Realm */,
+				77FE2AB52B715F64000ECA43 /* RealmSwift */,
+				77FE2AB82B715FA7000ECA43 /* SDWebImage */,
+				77FE2ABA2B715FA7000ECA43 /* SDWebImageMapKit */,
+			);
 			productName = Movies;
 			productReference = 776AE54C2B6D852200D7FCF1 /* Movies.app */;
 			productType = "com.apple.product-type.application";
@@ -291,6 +302,14 @@
 				Base,
 			);
 			mainGroup = 776AE5432B6D852200D7FCF1;
+			packageReferences = (
+				77FE2AAA2B715D62000ECA43 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				77FE2AAF2B715E4E000ECA43 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				77FE2AB22B715F64000ECA43 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				77FE2AB72B715FA7000ECA43 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				77FE2ABC2B7160A2000ECA43 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				77FE2ABD2B7161D8000ECA43 /* XCRemoteSwiftPackageReference "RxRealm" */,
+			);
 			productRefGroup = 776AE54D2B6D852200D7FCF1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -314,48 +333,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		8D5E52BC6A86442D27647961 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Movies-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9279AC4EBC6A60C7225C4579 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Movies/Pods-Movies-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Movies/Pods-Movies-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Movies/Pods-Movies-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		776AE5482B6D852200D7FCF1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -363,6 +340,7 @@
 			files = (
 				770DEDD82B700E1C00935E90 /* Haptic.swift in Sources */,
 				77DCA8AE2B6FA5F0004E3C50 /* DetailsHeaderView.swift in Sources */,
+				7711FC592B710CF300C70E8A /* FavoriteMovieDetailsVC.swift in Sources */,
 				77DCA8B32B6FCB96004E3C50 /* DetailsTVC.swift in Sources */,
 				77DF48182B6E5864003B93F8 /* ListVC.swift in Sources */,
 				77DF480A2B6DCDCC003B93F8 /* NetworkService.swift in Sources */,
@@ -374,6 +352,7 @@
 				773549392B6E763F00EBA1C2 /* NetList.swift in Sources */,
 				7735493B2B6E85D200EBA1C2 /* GenreModel.swift in Sources */,
 				77700EC02B6D8B8F00574BCD /* VCChanger.swift in Sources */,
+				7711FC5C2B710F9800C70E8A /* FavoriteDetailsTVC.swift in Sources */,
 				773549372B6E75BE00EBA1C2 /* MovieModel.swift in Sources */,
 				773549402B6EC13700EBA1C2 /* MovieDetailsVC.swift in Sources */,
 				77DF48112B6E4FA5003B93F8 /* MovieCVC.swift in Sources */,
@@ -522,7 +501,6 @@
 		};
 		776AE5612B6D852600D7FCF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5AC6BE31380FDED2A2FC99B /* Pods-Movies.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -556,7 +534,6 @@
 		};
 		776AE5622B6D852600D7FCF1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5FD8CF4712AB13BDA4F55540 /* Pods-Movies.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -610,6 +587,95 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		77FE2AAA2B715D62000ECA43 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.0;
+			};
+		};
+		77FE2AAF2B715E4E000ECA43 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+		77FE2AB22B715F64000ECA43 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		77FE2AB72B715FA7000ECA43 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.18.10;
+			};
+		};
+		77FE2ABC2B7160A2000ECA43 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.6.0;
+			};
+		};
+		77FE2ABD2B7161D8000ECA43 /* XCRemoteSwiftPackageReference "RxRealm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxRealm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		77FE2AAB2B715D62000ECA43 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 77FE2AAA2B715D62000ECA43 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		77FE2AAD2B715D62000ECA43 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 77FE2AAA2B715D62000ECA43 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+		77FE2AB02B715E4E000ECA43 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 77FE2AAF2B715E4E000ECA43 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		77FE2AB32B715F64000ECA43 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 77FE2AB22B715F64000ECA43 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		77FE2AB52B715F64000ECA43 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 77FE2AB22B715F64000ECA43 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		77FE2AB82B715FA7000ECA43 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 77FE2AB72B715FA7000ECA43 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		77FE2ABA2B715FA7000ECA43 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 77FE2AB72B715FA7000ECA43 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 776AE5442B6D852200D7FCF1 /* Project object */;
 }

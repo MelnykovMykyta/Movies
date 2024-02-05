@@ -11,12 +11,18 @@ import SnapKit
 import RxCocoa
 import RxSwift
 
+protocol FavoriteDelegate: AnyObject {
+    func didSelectFavoriteMovie(_ movie: MovieDBObject)
+}
+
 class FavoritesVC: UIViewController {
     
     private var disposeBag = DisposeBag()
     private let viewModel = FavoriteViewModel()
     
     private var favoriteMovies: [MovieDBObject] = []
+    
+    weak var delegateFavoriteMovie: FavoriteDelegate?
     
     private var label: UILabel!
     private var tableView: UITableView!
@@ -74,7 +80,6 @@ extension FavoritesVC: UITableViewDelegate, UITableViewDataSource {
         tableView.dataSource = self
         tableView.separatorStyle = .none
         tableView.showsVerticalScrollIndicator = false
-        tableView.allowsSelection = false
         tableView.register(FavoriteMovieTVC.self, forCellReuseIdentifier: "FavoriteMovieTVC")
         tableView.addGestureRecognizer(longPressGesture)
         view.addSubview(tableView)
@@ -104,8 +109,18 @@ extension FavoritesVC: UITableViewDelegate, UITableViewDataSource {
         cell.voteLabel.text = "\(D.Texts.voteText): \(movie.voteAverage)"
         cell.yearLabel.text = "\(D.Texts.yearText): \(String(describing: movie.releaseDate.getYear()))"
         cell.genreLabel.text = movie.genreIDS.map { $0 }.joined(separator: ", ")
+        cell.selectionStyle = .none
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let movie = favoriteMovies[indexPath.row]
+        let vc = FavoriteMovieDetailsVC()
+        delegateFavoriteMovie = vc
+        navigationController?.pushViewController(vc, animated: true)
+        delegateFavoriteMovie?.didSelectFavoriteMovie(movie)
+        
     }
     
     @objc private func longPress(_ gestureRecognizer: UILongPressGestureRecognizer) {
@@ -116,8 +131,12 @@ extension FavoritesVC: UITableViewDelegate, UITableViewDataSource {
         
         let movie = favoriteMovies[indexPath.item]
         Haptic.getHaptic()
-        favoriteMovies.remove(at: indexPath.row)
-        tableView.deleteRows(at: [indexPath], with: .fade)
-        viewModel.deleteFromFavorite(movie)
+        
+        tableView.performBatchUpdates({
+            favoriteMovies.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .left)
+        }) { _ in
+            self.viewModel.deleteFromFavorite(movie)
+        }
     }
 }
