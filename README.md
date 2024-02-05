@@ -7,17 +7,17 @@ The program is a mobile application for browsing a list of movies with the abili
 
 ## Technologies and Libraries:
 
-###### Programming Language: Swift.
-###### Architecture: MVVM (Model-View-ViewModel) with RxSwift.
-###### Network Request: Utilizes a custom NetworkService class for making requests to the TMDb API using Alamofire.
-###### Data Storage: Utilizes RealmDB for local storage of movie data and genres.
-###### Image Loading: Uses the SDWebImage library for asynchronous image loading and caching.
-###### User Interface: UIKit for building the user interface, including UITableView and UICollectionView. Constraint building is done using SnapKit.
-###### Delegate Pattern Implementation: Utilizes the delegate pattern for handling movie selection.
+##### Programming Language: Swift.
+##### Architecture: MVVM (Model-View-ViewModel) with RxSwift.
+##### Network Request: Utilizes a custom NetworkService class for making requests to the TMDb API using Alamofire.
+##### Data Storage: Utilizes RealmDB for local storage of movie data and genres.
+##### Image Loading: Uses the SDWebImage library for asynchronous image loading and caching.
+##### User Interface: UIKit for building the user interface, including UITableView and UICollectionView. Constraint building is done using SnapKit.
+##### Delegate Pattern Implementation: Utilizes the delegate pattern for handling movie selection.
 
 ## Design
-![2](https://github.com/MelnykovMykyta/Movies/assets/127539076/c39b093e-ac81-4a30-b300-2d282403f203)
-![1](https://github.com/MelnykovMykyta/Movies/assets/127539076/1f62349e-4a95-48ec-b0c3-4995385a486e)
+![2](https://github.com/MelnykovMykyta/Movies/assets/127539076/7afbb6e4-4249-48c4-b451-433583a1c83e)
+![1](https://github.com/MelnykovMykyta/Movies/assets/127539076/dde7b533-764a-4f72-a4ac-1d97d30b2a64)
 
 
 ## Main Features:
