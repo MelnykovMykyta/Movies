@@ -16,8 +16,9 @@ The program is a mobile application for browsing a list of movies with the abili
 ###### Delegate Pattern Implementation: Utilizes the delegate pattern for handling movie selection.
 
 ## Design
-![1](https://github.com/MelnykovMykyta/Movies/assets/127539076/c8cc0b4a-c640-4f49-8b9a-e1fd44c0e4d9)
-![2](https://github.com/MelnykovMykyta/Movies/assets/127539076/c86be66a-2883-47a1-a5dc-b0f1e3742a1c)
+![2](https://github.com/MelnykovMykyta/Movies/assets/127539076/c39b093e-ac81-4a30-b300-2d282403f203)
+![1](https://github.com/MelnykovMykyta/Movies/assets/127539076/1f62349e-4a95-48ec-b0c3-4995385a486e)
+
 
 ## Main Features:
 
