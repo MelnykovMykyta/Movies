@@ -251,8 +251,6 @@
 			dependencies = (
 			);
 			name = Movies;
-			packageProductDependencies = (
-			);
 			productName = Movies;
 			productReference = 776AE54C2B6D852200D7FCF1 /* Movies.app */;
 			productType = "com.apple.product-type.application";
@@ -281,8 +279,6 @@
 				Base,
 			);
 			mainGroup = 776AE5432B6D852200D7FCF1;
-			packageReferences = (
-			);
 			productRefGroup = 776AE54D2B6D852200D7FCF1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
