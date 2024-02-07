@@ -78,7 +78,7 @@ private extension FavoriteMovieTVC {
         image.snp.makeConstraints {
             $0.width.equalTo(view.snp.width).multipliedBy(0.2)
             $0.height.equalTo(image.snp.width).multipliedBy(1.5)
-            $0.top.leading.bottom.equalToSuperview()
+            $0.top.leading.bottom.equalToSuperview().priority(999)
         }
         
         title.snp.makeConstraints {
